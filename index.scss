@@ -1,0 +1,85 @@
+// https://www.colourlovers.com/palette/92095/Giant_Goldfish
+:root {
+  --padding: 10vmin;
+  --color-aoi: #69d2e7;
+  --color-clean-pondwater: #a7dbd8;
+  --color-beach-storm: #e0e4cc;
+  --color-giant-goldfish: #f38630;
+  --color-unreal-food-pills: #fa6900;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--color-aoi);
+  background: radial-gradient(circle, rgba(224,228,204,1) 0%, rgba(105,210,231,1) 85%);
+  font-family: roboto;
+  font-size: clamp(14px, 2vw, 20px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.section {
+  height: 100vh;
+  padding: 30px;
+  padding-right: 50%;
+
+  .wrapper {
+    margin: auto;
+    max-height: 500px;
+  }
+
+  .text {
+    width: 80%;
+  }
+
+  .scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(16px, 2vw, 30px);
+  }
+
+  &--x-ray {
+    background: var(--color-unreal-food-pills)
+  }
+
+  &--right {
+    padding-right: 0;
+    padding-left: 50%;
+  }
+}
+
+.credit {
+  background: black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 12px;
+
+  a {
+    color: white;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: clamp(20px, 5vw, 80px);
+  font-size: clamp(20px, 3.5vw, 60px);
+}
